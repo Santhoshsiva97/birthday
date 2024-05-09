@@ -1,0 +1,23 @@
+{
+  "name": "wishes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "run-script-os": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santhoshsiva97/birthday.git"
+  },
+  "author": "Santhosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santhoshsiva97/birthday/issues"
+  },
+  "homepage": "https://github.com/Santhoshsiva97/birthday#readme"
+}
