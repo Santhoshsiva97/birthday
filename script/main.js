@@ -209,7 +209,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      ".lydia-dp",
+      ".pic-dp",
       1,
       {
         scale: 3.5,
