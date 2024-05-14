@@ -298,3 +298,7 @@ body {
     font-weight: lighter;
   }
 }
+
+.song {
+	display: none;
+}
