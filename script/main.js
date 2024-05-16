@@ -318,12 +318,22 @@ const animationTimeline = () => {
   // tl.seek("currentStep");
   // tl.timeScale(2);
 
+  const audio = document.getElementById("song1");
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
+    audio.play();
     tl.restart();
   });
 };
 
 // Run fetch and animation in sequence
-fetchData();
+const start = document.getElementById("start");
+start.addEventListener("click", () => {
+  const audio = document.getElementById("song1");
+
+  audio.play();
+  
+  fetchData();
+})
+
