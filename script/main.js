@@ -1,12 +1,22 @@
-$('document').ready(function(){
-  const audio = document.getElementById("song1");
-  audio.play();
-})
+// $('document').ready(function(){
+//   let audio = document.getElementById("song1");
+//   // audio.play();
+//   const promise = audio.play();
+//   if (promise) {
+//       //Older browsers may not return a promise, according to the MDN website
+//       promise.catch(function(error) { console.error(error); });
+//   }
+// })
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
-  const audio = document.getElementById("song1");
-  audio.play();
+  let audio = document.getElementById("song1");
+  // audio.play();
+  const promise = audio.play();
+  if (promise) {
+      //Older browsers may not return a promise, according to the MDN website
+      promise.catch(function(error) { console.error(error); });
+  }
 
   fetch("customize.json")
     .then(data => data.json())
