@@ -1,3 +1,8 @@
+$('document').ready(function(){
+  const audio = document.getElementById("song1");
+  audio.play();
+})
+
 // Import the data to customize and insert them into page
 const fetchData = () => {
   const audio = document.getElementById("song1");
