@@ -1,5 +1,8 @@
 // Import the data to customize and insert them into page
 const fetchData = () => {
+  const audio = document.getElementById("song1");
+  audio.play();
+
   fetch("customize.json")
     .then(data => data.json())
     .then(data => {
@@ -21,6 +24,9 @@ const fetchData = () => {
           animationTimeline();
         } 
       });
+    }).then(() => {
+      const audio = document.getElementById("song1");
+      audio.play();
     });
 };
 
@@ -30,8 +36,7 @@ const animationTimeline = () => {
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  // const audio = document.getElementById("song1");
-  // audio.play();
+  
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
