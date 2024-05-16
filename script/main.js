@@ -234,71 +234,71 @@ const animationTimeline = () => {
       rotation: -180,
       opacity: 0
     })
-    // .staggerFrom(
-    //   ".wish-hbd span",
-    //   1,
-    //   {
-    //     opacity: 0,
-    //     y: -50,
-    //     // scale: 0.3,
-    //     rotation: 150,
-    //     skewX: "30deg",
-    //     ease: Elastic.easeOut.config(1, 0.5)
-    //   },
-    //   0.1
-    // )
-    // .staggerFromTo(
-    //   ".wish-hbd span",
-    //   1,
-    //   {
-    //     scale: 1.4,
-    //     rotationY: 150
-    //   },
-    //   {
-    //     scale: 1,
-    //     rotationY: 0,
-    //     color: "#ff69b4",
-    //     ease: Expo.easeOut
-    //   },
-    //   0.1,
-    //   "party"
-    // )
-    // .from(
-    //   ".wish h5",
-    //   1,
-    //   {
-    //     opacity: 0,
-    //     y: 10,
-    //     skewX: "-15deg"
-    //   },
-    //   "party"
-    // )
-    // .staggerTo(
-    //   ".eight svg",
-    //   2,
-    //   {
-    //     visibility: "visible",
-    //     opacity: 0,
-    //     scale: 80,
-    //     repeat: 3,
-    //     repeatDelay: 1.4
-    //   },
-    //   0.3
-    // )
-    // .to(".six", 1, {
-    //   opacity: 0,
-    //   y: 30,
-    //   zIndex: "-1"
-    // })
-    // .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    // .to(
-    //   ".last-smile",
-    //   1,
-    //   {
-    //     rotation: 90
-    //   },
-    //   "+=1"
-    // );
+    .staggerFrom(
+      ".wish-hbd span",
+      1,
+      {
+        opacity: 0,
+        y: -50,
+        // scale: 0.3,
+        rotation: 150,
+        skewX: "30deg",
+        ease: Elastic.easeOut.config(1, 0.5)
+      },
+      0.1
+    )
+    .staggerFromTo(
+      ".wish-hbd span",
+      1,
+      {
+        scale: 1.4,
+        rotationY: 150
+      },
+      {
+        scale: 1,
+        rotationY: 0,
+        color: "#ff69b4",
+        ease: Expo.easeOut
+      },
+      0.1,
+      "party"
+    )
+    .from(
+      ".wish h5",
+      1,
+      {
+        opacity: 0,
+        y: 10,
+        skewX: "-15deg"
+      },
+      "party"
+    )
+    .staggerTo(
+      ".eight svg",
+      2,
+      {
+        visibility: "visible",
+        opacity: 0,
+        scale: 80,
+        repeat: 3,
+        repeatDelay: 1.4
+      },
+      0.3
+    )
+    .to(".six", 1, {
+      opacity: 0,
+      y: 30,
+      zIndex: "-1"
+    })
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .to(
+      ".last-smile",
+      1,
+      {
+        rotation: 90
+      },
+      "+=1"
+    );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
